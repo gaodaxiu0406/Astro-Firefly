@@ -1,5 +1,5 @@
 {
-  "name": "firefly",
+  "name": "astro-firefly",
   "type": "module",
   "version": "6.16.8",
   "engines": {
