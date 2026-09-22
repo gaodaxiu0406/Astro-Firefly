@@ -44,6 +44,6 @@ export const analyticsConfig: AnalyticsConfig = {
 		//  Hash路由模式, 项目使用History API路由, 所以不必开启默认false
 		hashMode: false,
 		// 是否开启网站录屏功能
-		screenRecord: true,
+		screenRecord: false,
 	},
 };

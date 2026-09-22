@@ -19,6 +19,6 @@ export type DynamicMemocsConfig = {
 	enable: boolean;
 	/** Memos 实例地址，如 "https://memos.example.com" */
 	apiUrl: string;
-	/** Memos 用户标识，如 "users/xiaye"，用于过滤指定用户的动态 */
+	/** Memos 用户标识，如 "users/gaodaxiu"，用于过滤指定用户的动态 */
 	parent?: string;
 };

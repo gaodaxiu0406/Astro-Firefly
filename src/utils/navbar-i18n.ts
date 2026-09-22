@@ -11,7 +11,7 @@ import type { NavBarLink } from "@/types/navBarConfig";
 const NAVBAR_DEFAULT_NAMES: Record<string, I18nKey> = {
 	// 分组
 	文章: I18nKey.navArticles,
-	社交: I18nKey.navSocial,
+	// 社交: I18nKey.navSocial,
 	我的: I18nKey.navMine,
 	关于: I18nKey.navAbout,
 	链接: I18nKey.navLinks,
