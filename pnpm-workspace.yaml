@@ -4,6 +4,4 @@ allowBuilds:
   esbuild: true
   sharp: set this to true or false
   workerd: true
-  "pnpm": {
-    "onlyBuiltDependencies": ["sharp"]
-  }
+  onlyBuiltDependencies: sharp
