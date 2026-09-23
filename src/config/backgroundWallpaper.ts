@@ -72,18 +72,18 @@ export const backgroundWallpaper: BackgroundWallpaperConfig = {
 		homeText: {
 			// 是否启用主页横幅文字
 			enable: true,
-			// 主页横幅主标题
-			title: "Lovely firefly!",
+			// 主页横幅主标题  Lovely firefly!
+			title: "个人技术博客",
 			// 主页横幅主标题字体大小
 			titleSize: "4.5rem",
 			// 主页横幅副标题
 			subtitle: [
-				"In Reddened Chrysalis, I Once Rest",
-				"From Shattered Sky, I Free Fall",
-				"Amidst Silenced Stars, I Deep Sleep",
-				"Upon Lighted Fyrefly, I Soon Gaze",
-				"From Undreamt Night, I Thence Shine",
-				"In Finalized Morrow, I Full Bloom",
+				"独处不是孤单，是生活在给你沉淀的时间。",
+				"若你决定灿烂，山无遮，海无拦。",
+				"如果命运是世界上最烂的编剧，你就要争取 做你自己人生中最好的演员。",
+				"认清明天的去向，不忘昨日的来处。",
+				"所有的为时已晚，其实都是恰逢其时。",
+				"自能生羽翼，何必仰云梯。",
 			],
 			// 主页横幅副标题字体大小
 			subtitleSize: "1.5rem",

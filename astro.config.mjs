@@ -59,12 +59,19 @@ if (process.env.NODE_ENV === "development") {
 	setMaxListeners(20);
 }
 
+console.log(process.env.CF_WORKERS, 'process.env.CF_WORKERS')
+
 const adapter = process.env.CF_WORKERS
 	? cloudflare({
 			prerenderEnvironment: "node",
 		})
 	: undefined;
 
+	console.log(adapter, 'adapter')
+// export default defineConfig({
+//   adapter: cloudflare(),
+//   // 其他配置...
+// });
 // https://astro.build/config
 export default defineConfig({
 	site: siteConfig.site_url,

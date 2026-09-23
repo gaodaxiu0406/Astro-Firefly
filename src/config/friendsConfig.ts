@@ -14,7 +14,7 @@ export const friendsPageConfig: FriendsPageConfig = {
 	showCustomContent: true,
 
 	// 是否显示评论区，需要先在commentConfig.ts启用评论系统
-	showComment: true,
+	showComment: false,
 
 	// 是否开启随机排序配置，如果开启，就会忽略权重，构建时进行一次随机排序
 	randomizeSort: false,
@@ -30,7 +30,7 @@ export const friendsConfig: FriendLink[] = [
 		siteurl: "https://blog.cuteleaf.cn",
 		tags: ["Blog"],
 		weight: 10, // 权重，数字越大排序越靠前
-		enabled: true, // 是否启用
+		enabled: false, // 是否启用
 	},
 	{
 		title: "Firefly Docs",
@@ -39,7 +39,7 @@ export const friendsConfig: FriendLink[] = [
 		siteurl: "https://docs-firefly.cuteleaf.cn",
 		tags: ["Docs"],
 		weight: 9,
-		enabled: true,
+		enabled: false,
 	},
 	{
 		title: "Astro",
@@ -48,7 +48,7 @@ export const friendsConfig: FriendLink[] = [
 		siteurl: "https://github.com/withastro/astro",
 		tags: ["Framework"],
 		weight: 8,
-		enabled: true,
+		enabled: false,
 	},
 ];
 

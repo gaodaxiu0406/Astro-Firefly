@@ -10,7 +10,7 @@ export const commentConfig: CommentConfig = {
 		// 设置 Twikoo 评论系统语言
 		lang: "zh-CN",
 		// 是否启用文章访问量统计功能
-		visitorCount: true,
+		visitorCount: false,
 		// Twikoo JS 文件地址，支持 CDN 链接
 		// 中国推荐1: https://registry.npmmirror.com/twikoo/1.7.14/files/dist/twikoo.min.js
 		// 中国推荐2: https://s4.zstatic.net/npm/twikoo@1.7.14/dist/twikoo.min.js
@@ -38,7 +38,7 @@ export const commentConfig: CommentConfig = {
 		//   'disable'  —— 禁止所有登录和 OAuth，仅允许匿名评论（填写昵称/邮箱），适用于极简留言。
 		login: "enable",
 		// 是否启用文章访问量统计功能
-		visitorCount: true,
+		visitorCount: false,
 	},
 
 	// artalk评论系统配置
@@ -48,7 +48,7 @@ export const commentConfig: CommentConfig = {
 		// 设置 Artalk 语言
 		locale: "zh-CN",
 		// 是否启用文章访问量统计功能
-		visitorCount: true,
+		visitorCount: false,
 	},
 
 	//giscus评论系统配置
