@@ -6,6 +6,9 @@
     "node": ">=22.23.0"
   },
   "packageManager": "pnpm@12.5.1",
+  "pnpm": {
+    "onlyBuiltDependencies": ["sharp"]
+  },
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
