@@ -67,7 +67,6 @@ const adapter = process.env.CF_WORKERS
 		})
 	: undefined;
 
-	console.log(adapter, 'adapter')
 // export default defineConfig({
 //   adapter: cloudflare(),
 //   // 其他配置...
@@ -115,9 +114,7 @@ export default defineConfig({
 			});
 	})(),
 
-	adapter: netlify({
-    edgeMiddleware: true,
-  }),
+	adapter,
 
 	// 图像优化配置
 	image: {

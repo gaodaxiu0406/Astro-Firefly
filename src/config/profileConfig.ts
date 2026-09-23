@@ -28,13 +28,13 @@ export const profileConfig: ProfileConfig = {
 			url: "https://github.com/gaodaxiu0406",
 			showName: false,
 		},
-		{
-			name: "Email",
-			icon: "fa7-solid:envelope",
-			// url: "mailto:xiaye@msn.com",
-			url: "gdxiu666@aliyun.com",
-			showName: false,
-		},
+		// {
+		// 	name: "Email",
+		// 	icon: "fa7-solid:envelope",
+		// 	// url: "mailto:xiaye@msn.com",
+		// 	url: "gdxiu666@aliyun.com",
+		// 	showName: false,
+		// },
 		// {
 		// 	name: "RSS",
 		// 	icon: "fa7-solid:rss",

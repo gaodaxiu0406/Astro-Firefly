@@ -111,12 +111,12 @@ export const backgroundWallpaper: BackgroundWallpaperConfig = {
 					url: "https://github.com/gaodaxiu0406",
 					showName: true,
 				},
-				{
-					name: "Email",
-					icon: "fa7-solid:envelope",
-					// url: "mailto:xiaye@msn.com",
-					url: "gdxiu666@aliyun.com",
-				},
+				// {
+				// 	name: "Email",
+				// 	icon: "fa7-solid:envelope",
+				// 	// url: "mailto:xiaye@msn.com",
+				// 	url: "gdxiu666@aliyun.com",
+				// },
 				// {
 				// 	name: "Sponsor",
 				// 	icon: "material-symbols:favorite",
