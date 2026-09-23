@@ -115,7 +115,9 @@ export default defineConfig({
 			});
 	})(),
 
-	adapter,
+	adapter: netlify({
+    edgeMiddleware: true,
+  }),
 
 	// 图像优化配置
 	image: {
