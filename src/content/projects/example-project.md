@@ -1,12 +1,25 @@
 ---
+# 必填。项目名称。
 title: "示例项目"
+# 可选，和文章一样使用。
 slug: example-project
+# 必填。发布/更新日期，如 2025-10-01。用于排序（配合 order）。
 published: 1970-01-01
-draft: false
+# 可选，默认 false。设为 true 时生产构建会隐藏该页，预览可见。
+draft: true
+# 可选。手动排序权重，越大越靠前；未设置则按 published 降序。
 order: 100
+# 可选。卡片简介 + 详情页描述。
 description: "本文档介绍项目集合的 Frontmatter 字段与状态键值，供你在 src/content/projects/ 下编写项目时参考。"
+# 可选。封面图。支持完整 URL、公共根路径（/images/xxx.png）、相对路径（相对本文件目录，如 images/xxx.png）。留空则不显示封面。
 image: ""
+# 可选。项目状态，用标准 key:planning计划中 developing开发中 published已发布 archived已归档
 status: "planning"
+# 可选。外链按钮数组：{ label, icon, value }。icon 可用 astro-icon 名（如 fa7-brands:github）、图片 URL，或留空用 label 首字母。
+# link: []
+# 可选。页面语言，如 zh_CN。
+# lang: zh_CN
+# 可选。标签，列表页与详情页显示为 #标签。
 tags:
   - 文档
   - 指南
