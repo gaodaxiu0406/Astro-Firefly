@@ -16,7 +16,7 @@ description: "HEXO常用命令"
 # 可选。项目状态，用标准 key:planning计划中 developing开发中 published已发布 archived已归档
 status: "archived"
 # 分类
-category: HEXO
+category: 博客指南
 tags:
   - HEXO
 # 可选。外链按钮数组：{ label, icon, value }。icon 可用 astro-icon 名（如 fa7-brands:github）、图片 URL，或留空用 label 首字母。

@@ -16,7 +16,7 @@ description: "为HEXO博客中每篇文章的浏览量统计"
 # 可选。项目状态，用标准 key:planning计划中 developing开发中 published已发布 archived已归档
 status: "archived"
 # 分类
-category: HEXO
+category: 博客指南
 tags:
   - HEXO
   - 博客

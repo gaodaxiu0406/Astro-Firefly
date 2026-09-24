@@ -16,7 +16,7 @@ description: "基于GitHub创建自己HEXO的博客"
 # 可选。项目状态，用标准 key:planning计划中 developing开发中 published已发布 archived已归档
 status: "archived"
 # 分类
-category: HEXO
+category: 博客指南
 tags:
   - HEXO
   - 博客

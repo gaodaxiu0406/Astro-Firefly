@@ -16,7 +16,7 @@ description: "使用Astro搭建个人博客全攻略"
 # 可选。项目状态，用标准 key:planning计划中 developing开发中 published已发布 archived已归档
 status: "archived"
 # 分类
-category: Astro
+category: 博客指南
 tags:
   - Astro
   - 博客
