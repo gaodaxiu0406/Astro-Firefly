@@ -36,6 +36,7 @@ tags:
 # 可选。标签，列表页与详情页显示为 #标签。
 ---
 ## 保证node的版本
+
 ```angular2html
 node -v //查询node版本
 ```
