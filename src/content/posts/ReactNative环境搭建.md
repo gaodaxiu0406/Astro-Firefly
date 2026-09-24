@@ -15,13 +15,15 @@ description: "ReactNative环境搭建"
 image: "./images/webstore打开设置窗口.png"
 # 可选。项目状态，用标准 key:planning计划中 developing开发中 published已发布 archived已归档
 status: "archived"
+# 分类
+category: ReactNative
+tags:
+  - ReactNative
 # 可选。外链按钮数组：{ label, icon, value }。icon 可用 astro-icon 名（如 fa7-brands:github）、图片 URL，或留空用 label 首字母。
 # link: []
 # 可选。页面语言，如 zh_CN。
 # lang: zh_CN
 # 可选。标签，列表页与详情页显示为 #标签。
-tags:
-  - ReactNative
 ---
 
 > 官方中文文档地址[https://reactnative.cn/docs/0.51/getting-started.html](https://reactnative.cn/docs/0.51/getting-started.html)

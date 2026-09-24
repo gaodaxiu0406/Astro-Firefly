@@ -15,13 +15,15 @@ description: "Vuejs基础"
 image: ""
 # 可选。项目状态，用标准 key:planning计划中 developing开发中 published已发布 archived已归档
 status: "archived"
+# 分类
+category: Vue
+tags:
+  - vue
 # 可选。外链按钮数组：{ label, icon, value }。icon 可用 astro-icon 名（如 fa7-brands:github）、图片 URL，或留空用 label 首字母。
 # link: []
 # 可选。页面语言，如 zh_CN。
 # lang: zh_CN
 # 可选。标签，列表页与详情页显示为 #标签。
-tags:
-  - vue
 ---
 
 ## Vue.js是什么

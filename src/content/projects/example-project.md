@@ -15,6 +15,8 @@ description: "本文档介绍项目集合的 Frontmatter 字段与状态键值�
 image: ""
 # 可选。项目状态，用标准 key:planning计划中 developing开发中 published已发布 archived已归档
 status: "planning"
+# 分类
+# category：示例
 # 可选。外链按钮数组：{ label, icon, value }。icon 可用 astro-icon 名（如 fa7-brands:github）、图片 URL，或留空用 label 首字母。
 # link: []
 # 可选。页面语言，如 zh_CN。
