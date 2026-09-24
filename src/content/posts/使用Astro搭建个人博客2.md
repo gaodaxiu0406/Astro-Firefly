@@ -1,3 +1,32 @@
+---
+# 必填。项目名称。
+title: "使用Astro搭建个人博客2"
+# 可选，和文章一样使用。
+slug: 使用Astro搭建个人博客遇到的问题
+# 必填。发布/更新日期，如 2025-10-01。用于排序（配合 order）。
+published: 2026-09-25
+# 可选，默认 false。设为 true 时生产构建会隐藏该页，预览可见。
+draft: true
+# 可选。手动排序权重，越大越靠前；未设置则按 published 降序。
+order: 1
+# 可选。卡片简介 + 详情页描述。
+description: "使用Astro搭建个人博客遇到的问题"
+# 可选。封面图。支持完整 URL、公共根路径（/images/xxx.png）、相对路径（相对本文件目录，如 images/xxx.png）。留空则不显示封面。
+# image: "./images/MongoDB安装目录.png"
+# 可选。项目状态，用标准 key:planning计划中 developing开发中 published已发布 archived已归档
+status: "archived"
+# 分类
+category: Astro
+tags:
+  - Astro
+  - 博客
+# 可选。外链按钮数组：{ label, icon, value }。icon 可用 astro-icon 名（如 fa7-brands:github）、图片 URL，或留空用 label 首字母。
+# link: []
+# 可选。页面语言，如 zh_CN。
+# lang: zh_CN
+# 可选。标签，列表页与详情页显示为 #标签。
+---
+
 ## Mac 显示隐藏文件的快捷键
 
 Mac 显示隐藏文件的快捷键是 ‌Command + Shift + .（点号）‌。在访达窗口中按下此组合，隐藏文件会显示，再按一次恢复隐藏 

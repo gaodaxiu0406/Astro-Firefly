@@ -1,13 +1,4 @@
 ---
-title: HTTP缓存机制详解(转载)
-date: 2017-09-10 21:42:31
-tags:
-    - http缓存机制
-    - http
-    - js
-    - javascript
-categories: Javascript
-
 # 必填。项目名称。
 title: "HTTP缓存机制详解(转载)"
 # 可选，和文章一样使用。
