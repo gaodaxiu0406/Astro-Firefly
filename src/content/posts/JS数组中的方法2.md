@@ -10,7 +10,7 @@ draft: false
 # 可选。手动排序权重，越大越靠前；未设置则按 published 降序。
 order: 1
 # 可选。卡片简介 + 详情页描述。
-description: "JS数组中的方法1:forEach、filter、map、some、every、reduce、includes(es6)、find(es6)"
+description: "JS数组中的方法2:forEach、filter、map、some、every、reduce、includes(es6)、find(es6)"
 # 可选。封面图。支持完整 URL、公共根路径（/images/xxx.png）、相对路径（相对本文件目录，如 images/xxx.png）。留空则不显示封面。
 # image: "./images/MongoDB安装目录.png"
 # 可选。项目状态，用标准 key:planning计划中 developing开发中 published已发布 archived已归档
