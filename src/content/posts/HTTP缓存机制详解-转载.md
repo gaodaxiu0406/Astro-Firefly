@@ -6,7 +6,7 @@ slug: HTTP缓存机制详解(转载)
 # 必填。发布/更新日期，如 2025-10-01。用于排序（配合 order）。
 published: 2017-09-10
 # 可选，默认 false。设为 true 时生产构建会隐藏该页，预览可见。
-draft: false
+draft: true
 # 可选。手动排序权重，越大越靠前；未设置则按 published 降序。
 order: 1
 # 可选。卡片简介 + 详情页描述。

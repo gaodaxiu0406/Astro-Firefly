@@ -27,12 +27,14 @@ tags:
 # 可选。标签，列表页与详情页显示为 #标签。
 ---
 ##### 绘图
-- 1. cvs.drawImage(Image,x,y,w,h);
-    - Image 就是可以放在DOM中的真实图片，可以动态创建，也可以获取页面上的
-    - x,y 图片放入画布,在画布左上角的坐标
-    - w,h 绘制图片的宽高
+- 1. `cvs.drawImage(Image,x,y,w,h);`
+  - Image 就是可以放在DOM中的真实图片，可以动态创建，也可以获取页面上的
+  - x,y 图片放入画布,在画布左上角的坐标
+  - w,h 绘制图片的宽高
+
 <!-- more -->
 - 案例:将图片放在画布上
+
 ```js
 	function draw1(){
 		var img=new Image;//动态创建一个img
@@ -45,17 +47,18 @@ tags:
 	draw1();
 ```
 
-- 2. cvs.drawImage(img_elem,sx,sy,sw,sh,dx,dy,dw,dh);
-    - sx,sy 图片左上角的坐标
-    - sw,sh  矩形区域的宽高 用来截取图片
-    - dx,dy  截取出来放在画布canvas上的坐标
-    - dw,dh  画在canvas上的宽高
+- 2. `cvs.drawImage(img_elem,sx,sy,sw,sh,dx,dy,dw,dh);`
+  - sx,sy 图片左上角的坐标
+  - sw,sh  矩形区域的宽高 用来截取图片
+  - dx,dy  截取出来放在画布canvas上的坐标
+  - dw,dh  画在canvas上的宽高
 
-    - 总结:
-        - sw,sy,sx,sy 是用来截取图片的过程
-        - dx,dy,dw,dh 把截取出来的图片放在canvas上的过程
+  - 总结:
+    - sw,sy,sx,sy 是用来截取图片的过程
+    - dx,dy,dw,dh 把截取出来的图片放在canvas上的过程
 
 - 案例:截取图片
+
 ```js
 	function draw2(){
 		var img=new Image;//动态创建一个img
@@ -70,14 +73,15 @@ tags:
 
 - 3. 设置平铺
 - cvs.creatPattern(image,type)
-    - Image 就是可以放在DOM中的真实图片，可以动态创建，也可以获取页面上的
-    - type:
-        - no-repeat 不平铺
-        - repeat 全方向平铺
-        - repeat-x x轴方向平铺
-        - repeat-y y轴方向平铺
+  - Image 就是可以放在DOM中的真实图片，可以动态创建，也可以获取页面上的
+  - type:
+    - no-repeat 不平铺
+    - repeat 全方向平铺
+    - repeat-x x轴方向平铺
+    - repeat-y y轴方向平铺
 
 - 案例
+
 ```js
 function draw3(){
 	var img=new Image;
@@ -92,4 +96,3 @@ function draw3(){
 }
 //draw3();
 ```
-

@@ -27,14 +27,15 @@ tags:
 # 可选。标签，列表页与详情页显示为 #标签。
 ---
 - 1.线性渐变
-- var CLG=cvs.createLinearGradient(x0,y0,x1,y1);
-    - x0:渐变开始的x坐标
-    - y0:渐变开始的y坐标
-    - x1:渐变结束的x坐标
-    - y1:渐变结束的y坐标
-- CLG.addColorStop(n,m);
-    - n:设置颜色的偏移量
-    - m:颜色
+- `var CLG=cvs.createLinearGradient(x0,y0,x1,y1);`
+  - x0:渐变开始的x坐标
+  - y0:渐变开始的y坐标
+  - x1:渐变结束的x坐标
+  - y1:渐变结束的y坐标
+- `CLG.addColorStop(n,m);`
+  - n:设置颜色的偏移量
+  - m:颜色
+
 <!-- more -->
 - 例如:
 
@@ -55,13 +56,13 @@ draw1();
 ```
 
 - 2.径向渐变(发散性渐变)
-- cvs.createRadialGradient(x0,y0,x1,y1,r1);
-    - x0:发散渐变开始中心的x坐标
-    - y0：发散渐变开始中心的y坐标
-    - r0:发散渐变开始的半径
-    - x1:发散渐变结束中心的x坐标
-    - y1：发散渐变结束中心的y坐标
-    - r1:发散渐变结束的半径
+- `cvs.createRadialGradient(x0,y0,x1,y1,r1);`
+  - x0:发散渐变开始中心的x坐标
+  - y0：发散渐变开始中心的y坐标
+  - r0:发散渐变开始的半径
+  - x1:发散渐变结束中心的x坐标
+  - y1：发散渐变结束中心的y坐标
+  - r1:发散渐变结束的半径
 - 例如:
 
 ```js

@@ -27,10 +27,12 @@ tags:
 # 可选。标签，列表页与详情页显示为 #标签。
 ---
 - 1. 平移translate(x,y);
-    x:坐标原点向x轴平移的距离
-    y:坐标原点向y轴平移的距离
+x:坐标原点向x轴平移的距离
+y:坐标原点向y轴平移的距离
+
 <!-- more -->
 - 案例
+
 ```js
 	function draw1(){
 		cvs.fillStyle='skyblue';
@@ -49,10 +51,11 @@ tags:
 ```
 
 - 2. 缩放 vas.scale(x0,y0);
-    x0:x轴按照x0的比例缩放
-    y0:y轴按照x0的比例缩放
+x0:x轴按照x0的比例缩放
+y0:y轴按照x0的比例缩放
 
 - 案例
+
 ```js
 	function draw2(){
 		cvs.scale(1,2);//设置缩放 x轴不变 y轴是之前的2倍
@@ -65,9 +68,10 @@ tags:
 ```
 
 - 3.旋转 vas.rotate(angle);
-    angle:坐标轴转的角度 他是一个弧度(和画圆的计算是一样的)
+angle:坐标轴转的角度 他是一个弧度(和画圆的计算是一样的)
 
 - 案例
+
 ```js
 	function draw3(){
 		cvs.rotate(Math.PI/4);//设置旋转  旋转角度为45度
@@ -77,14 +81,16 @@ tags:
 	draw3();
 ```
 
-#### 注意：平移、缩放、旋转都是对原始坐标（画布）操作的
+> 注意：平移、缩放、旋转都是对原始坐标（画布）操作的
+
 -  例如:
+
 ```js
-	function draw3(){
-		cvs.translate(200,0);//此时的原点已经变到200,0的位置
-		cvs.rotate(Math.PI/4);//设置旋转  旋转角度为45度
-		cvs.fillStyle='lightblue';
-		cvs.fillRect(100,100,200,100);
-	}
-	draw3();
+function draw3(){
+	cvs.translate(200,0);//此时的原点已经变到200,0的位置
+	cvs.rotate(Math.PI/4);//设置旋转  旋转角度为45度
+	cvs.fillStyle='lightblue';
+	cvs.fillRect(100,100,200,100);
+}
+draw3();
 ```

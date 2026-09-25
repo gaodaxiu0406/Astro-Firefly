@@ -27,13 +27,14 @@ tags:
 # 可选。标签，列表页与详情页显示为 #标签。
 ---
 - 1.阴影
-    - cvs.shadowOffsetX//阴影的横向偏移量，默认值是0
-    - cvs.shadowOffsetY//阴影的纵向偏移量，默认值是0
-    - cvs.shadowColor//阴影的颜色
-    - cvs.shadowBlur//阴影的模糊范围（值越大越模糊）
+  - cvs.shadowOffsetX//阴影的横向偏移量，默认值是0
+  - cvs.shadowOffsetY//阴影的纵向偏移量，默认值是0
+  - cvs.shadowColor//阴影的颜色
+  - cvs.shadowBlur//阴影的模糊范围（值越大越模糊）
 <!-- more -->
 - 案例
-```
+
+```js
 	function draw1(){
 		cvs.shadowColor='#000fff';//设置阴影颜色
 		cvs.shadowOffsetX=30;//设置阴影的横向偏移量30px
@@ -44,26 +45,28 @@ tags:
 	}
 	draw1();
 ```
+
 - 2.绘制文本
-    - 设置字体样式 cvs.font='字体大小font-size 字体样式font-family'
-    - 水平对齐方式 cvs.textAlign(start,end,right,center);
-    - 垂直对齐方式 cvs.textBaseline=''
-    - 属性值:top,middle,hangle,bottom,alphabetic,ideographic
-    - 计算文本长度
-        - var text='dfbzbh'
-        - console.log(cvs.measureText(text));//width:40.453125
-    - 填充文字
-        - cvs.fillText(text,x,y,maxWidth);
-        - 1) text:文本内容
-        - 2) x:文字起始点的横坐标
-        - 3) y:文字起始点的纵坐标
-    - 绘制文字轮廓
-        - cvs.strokeText(text,x,y,maxWidth);
-        - 1) text:文本内容
-        - 2) x:文字起始点的横坐标
-        - 3) y:文字起始点的纵坐标
+  - 设置字体样式 cvs.font='字体大小font-size 字体样式font-family'
+  - 水平对齐方式 cvs.textAlign(start,end,right,center);
+  - 垂直对齐方式 cvs.textBaseline=''
+  - 属性值:top,middle,hangle,bottom,alphabetic,ideographic
+  - 计算文本长度
+    - var text='dfbzbh'
+    - console.log(cvs.measureText(text));//width:40.453125
+  - 填充文字
+    - cvs.fillText(text,x,y,maxWidth);
+    - 1) text:文本内容
+    - 2) x:文字起始点的横坐标
+    - 3) y:文字起始点的纵坐标
+  - 绘制文字轮廓
+    - cvs.strokeText(text,x,y,maxWidth);
+    - 1) text:文本内容
+    - 2) x:文字起始点的横坐标
+    - 3) y:文字起始点的纵坐标
 
 - 案例1
+
 ```js
 function draw1(){
 		cvs.shadowColor='#000fff';//设置阴影颜色
@@ -76,7 +79,9 @@ function draw1(){
 	}
 	draw1();
 ```
+
 - 案例2
+
 ```js
 	function draw2(){
 		var text='hellow word';//设置文本内容
@@ -96,7 +101,9 @@ function draw1(){
 	}
 	draw2();
 ```
+
 - 案例3:文本线性渐变
+
 ```js
 function draw3(){
 		var CLG=cvs.createLinearGradient(0,0,300,100);
@@ -123,7 +130,9 @@ function draw3(){
 	}
 	draw3();
 ```
+
 - 案例4:文本径向渐变
+
 ```js
 	function draw4(){
 		var CRG=cvs.createLinearGradient(0,0,600,0,0,20);
@@ -144,5 +153,3 @@ function draw3(){
 	}
 	draw4();
 ```
-
-

@@ -29,13 +29,13 @@ tags:
 # 可选。标签，列表页与详情页显示为 #标签。
 ---
 
-### caller
+### `caller`
 
 - 检验函数被谁调用过
 - 检验函数被谁调用过 返回值是调用这个函数的函数本身,没有的话返回null
 <!-- more -->
 
-### arguments.callee
+### `arguments.callee`
 
 - 函数本身
 

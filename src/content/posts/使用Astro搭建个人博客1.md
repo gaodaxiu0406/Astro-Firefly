@@ -91,6 +91,7 @@ git --version
 #### 1.2.2 如何安装多个版本Node
 
 可能你在不同的项目中用到了不同的node版本，此时你需要在不同项目中切换使用不同的node版本，需要用到`nvm`。
+
 ```js
 // 1.‌执行安装脚本‌
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash

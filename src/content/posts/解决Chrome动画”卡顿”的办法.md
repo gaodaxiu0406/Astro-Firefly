@@ -61,25 +61,26 @@ webkit-transform: translate3d(0,0,0);
 transform: translate3d(0,0,0);
 ```
 
-- 使用-webkit-transform:transition3d(0,0,0)开启GPU硬件加速的chrome中渲染动画性能明显顺畅了许多
+- 使用`-webkit-transform:transition3d(0,0,0)`开启`GPU`硬件加速的`chrome`中渲染动画性能明显顺畅了许多
 
 ### chrome诡异的Bug
 
-- 对所有动画DOM元素添加-webkit-transform:transition3d(0,0,0)开启GPU硬件加速之后，又出现了一个chrome诡异的Bug
+- 对所有动画DOM元素添加`-webkit-transform:transition3d(0,0,0)`开启GPU硬件加速之后，又出现了一个`chrome`诡异的Bug
 
-- 当你有多个position:absolute;元素添加-webkit-transform:transition3d(0,0,0);开启GPU硬件加速之后，会有几个元素凭空消失
+- 当你有多个`position:absolute;`元素添加`-webkit-transform:transition3d(0,0,0);`开启`GPU`硬件加速之后，会有几个元素凭空消失
 
-- 这可能是跟添加-webkit-transform之后chrome尝试使用GPU硬件加速有关系，最后还是要等待Chrome官方更新解决了，当前Chrome版本是33。如果谁发现比较好的解决办法，欢迎提出^_^
+- 这可能是跟添加`-webkit-transform`之后`chrome`尝试使用`GPU`硬件加速有关系，最后还是要等待`Chrome`官方更新解决了，当前`Chrome`版本是33。如果谁发现比较好的解决办法，欢迎提出^_^
 
 #### 如何避免这个问题
 
-- 在使用-webkit-transform尝试对很多DOM元素编写3D动画时，尽量不要对这些元素及他们的父元素使用position:absolute/fixed。(其实这种情况很难避免)
+- 在使用`-webkit-transform`尝试对很多`DOM`元素编写3D动画时，尽量不要对这些元素及他们的父元素使用`position:absolute/fixed`。(其实这种情况很难避免)
 
-- 临时解决办法是,减少使用-webkit-transform:transition3d(0,0,0)的DOM元素数量，例如从9个减至6个就没有元素消失的现象了。
+- 临时解决办法是,减少使用`-webkit-transform:transition3d(0,0,0)`的`DOM`元素数量，例如从9个减至6个就没有元素消失的现象了。
 
-### 开启GPU硬件加速可能触发的问题：
+### 开启GPU硬件加速可能触发的问题
 
-- 通过-webkit-transform:transition3d/translateZ开启GPU硬件加速之后，有些时候可能会导致浏览器频繁闪烁或抖动，可以尝试以下办法解决之:
+- 通过`-webkit-transform:transition3d/translateZ`开启`GPU`硬件加速之后，有些时候可能会导致浏览器频繁闪烁或抖动，可以尝试以下办法解决之:
+
 ```css
 -webkit-backface-visibility:hidden;
 -webkit-perspective:1000;
@@ -88,19 +89,19 @@ transform: translate3d(0,0,0);
 ### 如何监测动画帧速率
 
 - 推荐两种实时监测网页渲染帧速率的方法：
-    - 1.Chrome的DevTool中TimeLine的Frame模块
-    - 2.地址栏输入”chrome:flags”搜索”fps”，将”FPS计数器”开启，浏览器重启后右上角会实时显示帧速率。
+  - 1.`Chrome`的`DevTool`中`TimeLine`的`Frame`模块
+  - 2.地址栏输入”`chrome:flags`”搜索”`fps`”，将”FPS计数器”开启，浏览器重启后右上角会实时显示帧速率。
 
-### 通过-webkit-transform:transition3d/translateZ开启GPU硬件加速的适用范围：
+### 通过-webkit-transform:transition3d/translateZ开启GPU硬件加速的适用范围
 
-- 使用很多大尺寸图片(尤其是PNG24图)进行动画的页面。
-- 页面有很多大尺寸图片并且进行了css缩放处理，页面可以滚动时。
-- 使用background-size:cover设置大尺寸背景图，并且页面可以滚动时。(详见:https://coderwall.com/p/j5udlw)
-- 编写大量DOM元素进行CSS3动画时(transition/transform/keyframes/absTop&Left)
-- 使用很多PNG图片拼接成CSS Sprite时
+- 使用很多大尺寸图片(尤其是`PNG24`图)进行动画的页面。
+- 页面有很多大尺寸图片并且进行了`css`缩放处理，页面可以滚动时。
+- 使用`background-size:cover`设置大尺寸背景图，并且页面可以滚动时。(详见:[https://coderwall.com/p/j5udlw](https://coderwall.com/p/j5udlw))
+- 编写大量`DOM`元素进行`CSS3`动画时(`transition`/`transform`/`keyframes`/`absTop`&`Left`)
+- 使用很多`PNG`图片拼接成`CSS Sprite`时
 
-    - **暂时只有这五种情况，欢迎大家补充**
+- **暂时只有这五种情况，欢迎大家补充**
 
 #### 通过开启GPU硬件加速虽然可以提升动画渲染性能或解决一些棘手问题，但使用仍需谨慎，使用前一定要进行严谨的测试，否则它反而会大量占用浏览网页用户的系统资源，尤其是在移动端，肆无忌惮的开启GPU硬件加速会导致大量消耗设备电量，降低电池寿命等问题。
 
-##### 参考地址:`http://blog.bingo929.com/transform-translate3d-translatez-transition-gpu-hardware-acceleration.html`
+> 参考地址:[http://blog.bingo929.com/transform-translate3d-translatez-transition-gpu-hardware-acceleration.html](http://blog.bingo929.com/transform-translate3d-translatez-transition-gpu-hardware-acceleration.html)

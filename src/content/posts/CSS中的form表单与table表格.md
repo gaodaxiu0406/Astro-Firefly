@@ -28,7 +28,9 @@ tags:
 # 可选。标签，列表页与详情页显示为 #标签。
 ---
 ### form表单
+
 - 用来获取用户信息`<form></form>`
+
 <!-- more -->
 ```html
 <form>
@@ -56,29 +58,32 @@ tags:
 ```
 
 - radio 单选按钮
-    -  name="ok"（name的值相同情况下）同时给到input type="radio"，表示单选只能选中其中的一个
+  -  name="ok"（name的值相同情况下）同时给到input type="radio"，表示单选只能选中其中的一个
 - lable描述表单元素功能
 - type 类型
 - name 名字
 - cheked 选中
-    - 单独写checked也可以达到选中的效果
+  - 单独写checked也可以达到选中的效果
 - `<input type="checkbox">`checkbox 多选按钮
 - textarea 文本域
 - `<textarea maxlength="10" minlength="1"></textarea>`
-    - maxlength字符输入的最大长度
+  - maxlength字符输入的最大长度
 
 ### table表格
+
 - `<caption>标题</caption>`
 - `<thead>表头</thead>`
-    - tr>th（标题单元格，th加粗居中）
+  - tr>th（标题单元格，th加粗居中）
 - `<tfoot>` 表尾
-    - tr>th（普通单元格）
-    - tr>td（普通单元格，td不加粗不居中）
+  - tr>th（普通单元格）
+  - tr>td（普通单元格，td不加粗不居中）
 - tbody 表身
-    - tr>th（普通单元格）
+  - tr>th（普通单元格）
+
 > thead和tfoot分别有一个 tbody可以有多个
 > tfoot一般放置在thead的后面，为了防止tbody中的内容过多，tfoot加载过慢的情况，但是虽然书写位置在前面，在页面中显示的时候，这部分依然在整个表格的最后面
 > 如果table用来搭建结构，我们只需写tr和td
+
 ```html
 <table>
     <tr>

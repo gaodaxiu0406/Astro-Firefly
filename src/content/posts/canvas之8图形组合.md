@@ -27,30 +27,31 @@ tags:
 # 可选。标签，列表页与详情页显示为 #标签。
 ---
 #### 图形组合
-- cvs.globalCompositeOperation=type;
+- `cvs.globalCompositeOperation=type;`
 - type的值:
-    - 1.source-over 默认值 覆盖 在原来的图形上绘制新图 新图在上
-    - 2.source-out 显示新图的非交集部分
-    - 3.source-in 显示新图和图形的交集，颜色是新图的颜色
-    - 4.source-atop 显示旧图和交集部分 交集是新图颜色
-    - 5.destination-over  在原来图形的下面绘制新图 旧图在上
-    - 6.destination-out 显示旧图的非交集部分
-    - 7.destination-in 显示交集 颜色是旧图颜色
-    - 8.destination-atop 显示新图和交集部分 交集是旧图颜色
-    - 9.lighter:全部显示 交集部分是叠加颜色
-    - 10.xor:显示新旧图的非交集部分
-    - 11.copy 只显示新图
+  - 1.source-over 默认值 覆盖 在原来的图形上绘制新图 新图在上
+  - 2.source-out 显示新图的非交集部分
+  - 3.source-in 显示新图和图形的交集，颜色是新图的颜色
+  - 4.source-atop 显示旧图和交集部分 交集是新图颜色
+  - 5.destination-over  在原来图形的下面绘制新图 旧图在上
+  - 6.destination-out 显示旧图的非交集部分
+  - 7.destination-in 显示交集 颜色是旧图颜色
+  - 8.destination-atop 显示新图和交集部分 交集是旧图颜色
+  - 9.lighter:全部显示 交集部分是叠加颜色
+  - 10.xor:显示新旧图的非交集部分
+  - 11.copy 只显示新图
 <!-- more -->
 - 案例1:在原来的图形上绘制新图 新图在上
+
 ```js
-	var draw=document.getElementById('draw');
-	var cvs=draw.getContext('2d');
-	function draw1(){
-		cvs.fillStyle='gold';
-		cvs.fillRect(10,10,100,100);
-        cvs.globalCompositeOperation='source-over';
-		cvs.fillStyle='pink';
-		cvs.fillRect(50,50,100,100);
-	}
-	draw1();
+var draw=document.getElementById('draw');
+var cvs=draw.getContext('2d');
+function draw1(){
+    cvs.fillStyle='gold';
+    cvs.fillRect(10,10,100,100);
+    cvs.globalCompositeOperation='source-over';
+    cvs.fillStyle='pink';
+    cvs.fillRect(50,50,100,100);
+}
+draw1();
 ```

@@ -27,14 +27,16 @@ tags:
 # 可选。标签，列表页与详情页显示为 #标签。
 ---
 - 1. cvs.arc(x,y,radius,startAngle,endAngle,anticlokwise);
-    - x,y 圆心坐标
-    - radius半径r
-    - startAngle 起始角 以弧度计算(钟表的3点钟方向是0度,也就是x轴的正方向是0度,默认是顺时针)
-    - endAngle  结束角
-    - anticlokwise 是否逆时针 默认值false false表示顺时针
+  - x,y 圆心坐标
+  - radius半径r
+  - startAngle 起始角 以弧度计算(钟表的3点钟方向是0度,也就是x轴的正方向是0度,默认是顺时针)
+  - endAngle  结束角
+  - anticlokwise 是否逆时针 默认值false false表示顺时针
 <!-- more -->
 - 2. 案例
-    - 案例1:边框半圆
+
+案例1:边框半圆
+
 ```js
 	function draw1(){//边框圆
 		cvs.strokeStyle='#ffa50';//设置笔触样式(边框样式)颜色
@@ -47,7 +49,8 @@ tags:
 	draw1();
 ```
 
-    - 案例2:同心圆
+案例2:同心圆
+
 ```js
 function draw2(){
 	cvs.fillStyle='orange';
@@ -71,9 +74,11 @@ function draw2(){
 	cvs.stroke();//绘制图形以边框样式绘制
 }
 draw2();
-    ```
-    - 案例3:每次调用fill绘制填充图的时候，会把当次路径的起始点和结束点分别连接，填充闭合部分(如果想让每个路径互不干扰 一定要记得写结束路径-->关闭路径)
-    ```
+```
+
+案例3:每次调用fill绘制填充图的时候，会把当次路径的起始点和结束点分别连接，填充闭合部分(如果想让每个路径互不干扰 一定要记得写结束路径-->关闭路径)
+
+```js
 function draw3(){
 	cvs.strokeStyle='pink';//设置笔触样式(边框样式)颜色为粉色
 	cvs.beginPath();//开始一个路径

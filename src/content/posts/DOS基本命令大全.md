@@ -26,49 +26,49 @@ tags:
 # lang: zh_CN
 # 可选。标签，列表页与详情页显示为 #标签。
 ---
+
 #### 基本命令
+
 <!-- more -->
 - 1、列出文件
-    - ls 参数 目录名
-    - 例: 看看驱动目录下有什么:ls /System/Library/Extensions
-    - 参数 -w 显示中文，-l 详细信息， -a 包括隐藏文件
+  - ls 参数 目录名
+  - 例: 看看驱动目录下有什么:ls /System/Library/Extensions
+  - 参数 -w 显示中文，-l 详细信息， -a 包括隐藏文件
 - 2、转换目录
-    - cd    例：想到驱动目录下溜达一圈   cd /System/Library/Extensions
+  - cd    例：想到驱动目录下溜达一圈   cd /System/Library/Extensions
 
 - 3、建立新目录
-    - mkdir 目录名
-    - 例：在驱动目录下建一个备份目录 backup
-    - mkdir /System/Library/Extensions/backup
-    - 在桌面上建一个备份目录 backup
-    - mkdir /User/用户名/Desktop/backup
+  - mkdir 目录名
+  - 例：在驱动目录下建一个备份目录 backup
+  - mkdir /System/Library/Extensions/backup
+  - 在桌面上建一个备份目录 backup
+  - mkdir /User/用户名/Desktop/backup
 
 - 4、拷贝文件
-    - cp 参数 源文件 目标文件
-    - 例：想把桌面的Natit.kext 拷贝到驱动目录中
-    - cp -R /User/用户名/Desktop/Natit.kext /System/Library/Extensions
-    - 参数R表示对目录进行递归操作，kext在图形界面下看起来是个文件，实际上是个文件夹。
-    - 把驱动目录下的所有文件备份到桌面backup
-    - cp -R /System/Library/Extensions/* /User/用户名/Desktop/backup
+  - cp 参数 源文件 目标文件
+  - 例：想把桌面的Natit.kext 拷贝到驱动目录中
+  - cp -R /User/用户名/Desktop/Natit.kext /System/Library/Extensions
+  - 参数R表示对目录进行递归操作，kext在图形界面下看起来是个文件，实际上是个文件夹。
+  - 把驱动目录下的所有文件备份到桌面backup
+  - cp -R /System/Library/Extensions/* /User/用户名/Desktop/backup
 
 - 5、删除文件
-    - rm 参数 文件
-    - 例：想删除驱动的缓存  rm -rf /System/Library/Extensions.kextcache
-    - rm -rf /System/Library/Extensions.mkext
-    - 参数－rf 表示递归和强制，千万要小心使用，如果执行了 rm -rf / 你的系统就全没了
+  - rm 参数 文件
+  - 例：想删除驱动的缓存  rm -rf /System/Library/Extensions.kextcache
+  - rm -rf /System/Library/Extensions.mkext
+  - 参数－rf 表示递归和强制，千万要小心使用，如果执行了 rm -rf / 你的系统就全没了
 
 - 6、移动文件
-    - mv 文件
-    - 例：想把AppleHDA.Kext 移到桌面
-    - mv /System/Library/Extensions/AppleHDA.kext /User/用户名/Desktop
-    - 想把AppleHDA.Kext 移到备份目录中
-    - mv /System/Library/Extensions/AppleHDA.kext /System/Library/Extensions/backup
+  - mv 文件
+  - 例：想把AppleHDA.Kext 移到桌面
+  - mv /System/Library/Extensions/AppleHDA.kext /User/用户名/Desktop
+  - 想把AppleHDA.Kext 移到备份目录中
+  - mv /System/Library/Extensions/AppleHDA.kext /System/Library/Extensions/backup
 
 - 7、文本编辑
-    - nano 文件名
-    - 例：编辑natit Info.plist
-    - nano /System/Library/Extensions/Natit.kext/Info.plist
-
-
+  - nano 文件名
+  - 例：编辑natit Info.plist
+  - nano /System/Library/Extensions/Natit.kext/Info.plist
 
 > 目录操作
 
@@ -85,8 +85,6 @@ tags:
 - pwd          显示当前目录的路径名                pwd
 
 - ls           显示当前目录的内容                  ls -la
-
-
 
 > 文件操作
 
@@ -105,7 +103,6 @@ tags:
 - find       使用匹配表达式查找文件          find . -name "*.c" -print
 
 - file       显示文件类型                  file filename
-
 
 > 选择操作
 
@@ -131,7 +128,6 @@ tags:
 
 - nl        给文件加上行号                nl file1 >file2
 
-
 > 进程操作
 
 - 命令名          功能描述               使用举例
@@ -139,7 +135,6 @@ tags:
 - ps          显示进程当前状态           ps u
 
 - kill        终止进程                 kill -9 30142
-
 
 > 时间操作
 
@@ -150,7 +145,6 @@ tags:
 - cal       显示日历                    cal 8 1996
 
 - time      统计程序的执行时间           time a.out
-
 
 > 网络与通信操作
 
@@ -174,7 +168,6 @@ tags:
 
 - mesg        允许或拒绝接收报文                 mesg n
 
-
 > Korn Shell 命令
 
 - 命令名              功能描述                     使用举例
@@ -186,7 +179,6 @@ tags:
 - alias         给某个命令定义别名                   alias del=rm -i
 
 - unalias       取消对某个别名的定义                 unalias del
-
 
 > 其它命令
 

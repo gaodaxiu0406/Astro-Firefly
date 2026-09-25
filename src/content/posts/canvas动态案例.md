@@ -26,9 +26,11 @@ tags:
 # lang: zh_CN
 # 可选。标签，列表页与详情页显示为 #标签。
 ---
-- Canvas动态案例
+
+Canvas动态案例
+
 <!-- more -->
-```css
+```html
 <!DOCTYPE html>
 <html>
 	<head>

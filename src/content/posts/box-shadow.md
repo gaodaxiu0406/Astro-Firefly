@@ -27,16 +27,23 @@ tags:
 # lang: zh_CN
 # 可选。标签，列表页与详情页显示为 #标签。
 ---
-## box-shadow 属性向框添加一个或多个阴影
-- 相关小项目地址:https://github.com/gaodaxiu0406/HEXOcase(CSS/小项目练习)
+
+## `box-shadow` 属性向框添加一个或多个阴影
+
+- 相关小项目地址:[https://github.com/gaodaxiu0406/HEXOcase(CSS/小项目练习)](https://github.com/gaodaxiu0406/HEXOcase(CSS/小项目练习))
+
 <!-- more -->
 ### 语法
+
 #### CSS语法
-```
+
+```css
 box-shadow: h-shadow v-shadow blur spread color inset;
 ```
+
 ##### 注释
-- box-shadow 向框添加一个或多个阴影。该属性是由逗号分隔的阴影列表，每个阴影由 2-4 个长度值、可选的颜色值以及可选的 inset 关键词来规定。省略长度的值是 0。
+
+- `box-shadow` 向框添加一个或多个阴影。该属性是由逗号分隔的阴影列表，每个阴影由 2-4 个长度值、可选的颜色值以及可选的 `inset` 关键词来规定。省略长度的值是 0。
 
 |值|描述|
 |----|----|
@@ -47,24 +54,29 @@ box-shadow: h-shadow v-shadow blur spread color inset;
 |color|可选。阴影的颜色。请参阅 CSS 颜色值。|
 |inset|可选。将外部阴影 (outset) 改为内部阴影。|
 
-```
+```css
 box-shadow: 10px 20px 30px 40px #000 inset;
 ```
 
 #### JavaScript语法
-```
+
+```js
 object.style.boxShadow="10px 10px 5px #888888"
 ```
 
-## text-shadow
+## `text-shadow`
 
 ### 语法
+
 #### CSS语法
-```
+
+```css
 text-shadow: h-shadow v-shadow blur color;
 ```
+
 ##### 注释
-- text-shadow 属性向文本添加一个或多个阴影。该属性是逗号分隔的阴影列表，每个阴影有两个或三个长度值和一个可选的颜色值进行规定。省略的长度是 0。
+
+- `text-shadow` 属性向文本添加一个或多个阴影。该属性是逗号分隔的阴影列表，每个阴影有两个或三个长度值和一个可选的颜色值进行规定。省略的长度是 0。
 
 |值|描述|
 |----|----|
@@ -73,6 +85,6 @@ text-shadow: h-shadow v-shadow blur color;
 |blur|可选。模糊的距离。|
 |color|可选。阴影的颜色。参阅 CSS 颜色值。|
 
-```
+```css
 text-shadow: 10px 20px 30px #000;
 ```
