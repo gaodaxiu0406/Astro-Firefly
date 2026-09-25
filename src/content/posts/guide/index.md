@@ -1,7 +1,10 @@
 ---
 title: Firefly 简单使用指南
 published: 1970-01-02
+# pinned是否置顶
 pinned: true
+# 可选，默认 false。设为 true 时生产构建会隐藏该页，预览可见。
+draft: true
 description: "如何使用 Firefly 博客模板。"
 image: "./cover.avif"
 tags: ["Firefly", "博客", "Markdown", "指南"]
