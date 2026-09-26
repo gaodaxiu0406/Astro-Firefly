@@ -16,9 +16,9 @@ description: "解决chrome自动填充白色背景(input:-internal-autofill-prev
 # 可选。项目状态，用标准 key:planning计划中 developing开发中 published已发布 archived已归档
 status: "archived"
 # 分类
-category: Css
+category: CSS
 tags:
-  - Css
+  - CSS
   - input
 # 可选。外链按钮数组：{ label, icon, value }。icon 可用 astro-icon 名（如 fa7-brands:github）、图片 URL，或留空用 label 首字母。
 # link: []
