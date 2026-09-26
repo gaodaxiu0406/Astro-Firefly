@@ -110,12 +110,12 @@ export const siteConfig: SiteConfig = {
 		// image 和 url 类型可额外设置 valueDark，用于暗色模式下显示另一张图片，不设置则亮暗色共用 value
 		// 例如: { type: "image", value: "assets/images/logo.png", valueDark: "assets/images/logo-dark.png", alt: "Logo" }
 		// 使用 Astro 图标库时不需要设置 valueDark，图标会自动跟随主题亮暗色切换
-		logo: {
-			type: "image",
-			value: "assets/images/logo/firefly-light.png",
-			valueDark: "assets/images/logo/firefly-dark.png",
-			alt: "🍀",
-		},
+		// logo: {
+		// 	type: "image",
+		// 	value: "assets/images/logo/firefly-light.png",
+		// 	valueDark: "assets/images/logo/firefly-dark.png",
+		// 	alt: "🔥",
+		// },
 		// 导航栏标题
 		title: "个人技术博客",
 		// 全宽导航栏，导航栏是否占满屏幕宽度
@@ -159,15 +159,15 @@ export const siteConfig: SiteConfig = {
 
 	// ── 文章列表布局配置 ──────────────────────────────────
 	postListLayout: {
-		// 默认布局模式："list" 列表模式（单列布局），"grid" 网格模式（多列布局）
-		defaultMode: "list",
+		// 默认布局模式："list" 列表模式（单列布局），"grid" 网格模式（多列布局） 模版默认list
+		defaultMode: "grid",
 		// 移动端默认布局模式，不设置则跟随 defaultMode
 		mobileDefaultMode: "grid",
 		// 列表模式下封面图显示在哪一侧："right" 右侧，"left" 左侧
 		// 网格模式的封面固定在卡片顶部，不受此项影响
 		coverPosition: "right",
-		// 文章简介显示行数，设为 0 则不截断
-		descriptionLines: 2,
+		// 文章简介显示行数，设为 0 则不截断  模版默认2
+		descriptionLines: 0,
 		// 文章卡片底部统计和发布日期是否显示图标
 		showStatsIcons: true,
 		// 标签显示位置
@@ -186,12 +186,12 @@ export const siteConfig: SiteConfig = {
 			showCategory: true,
 			// 是否显示标签
 			showTags: true,
-			// 标签数量，设为 0 则不限制
-			tagCount: 3,
-			// 是否显示字数
-			showWords: false,
-			// 是否显示阅读时间
-			showReadingTime: false,
+			// 标签数量，设为 0 则不限制 模版默认3
+			tagCount: 0,
+			// 是否显示字数 模版默认false
+			showWords: true,
+			// 是否显示阅读时间 模版默认false
+			showReadingTime: true,
 		},
 		// 底部 PostStats 统计信息显示控制
 		// 如果tagsPosition设置为"bottom"，则stats将不显示
@@ -206,7 +206,7 @@ export const siteConfig: SiteConfig = {
 		// 网格布局配置，仅在 defaultMode 为 "grid" 或允许切换布局时生效
 		grid: {
 			// 是否开启瀑布流布局，同时有封面图和无封面图的混合文章推荐开启
-			masonry: false,
+			masonry: true, // 模版默认false
 			// 网格模式卡片最小宽度(px)，浏览器根据容器宽度自动计算列数
 			columnWidth: 320,
 			// 网格模式封面是否撑满卡片贴边
