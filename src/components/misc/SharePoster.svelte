@@ -602,8 +602,7 @@ let copied = false;
 // 复制链接
 function copyLink() {
 	navigator.clipboard.writeText(url);
-	console.log(url, 'url')
-	console.log(navigator.clipboard.writeText(url), 'navigator.clipboard.writeText(url)')
+	// console.log(url, 'url')
 	copied = true;
 	setTimeout(() => {
 		copied = false;
