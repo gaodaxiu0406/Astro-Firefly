@@ -172,7 +172,7 @@ pnpm create astro@latest
 
 截图blog-2？？？
 
-根据运行提示，在浏览器输入 http://localhost:4321/ 访问博客
+根据运行提示，在浏览器输入 `http://localhost:4321/` 访问博客
 
 截图blog-3？？？
 

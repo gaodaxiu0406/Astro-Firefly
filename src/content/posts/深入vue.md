@@ -1,6 +1,6 @@
 ---
 # 必填。项目名称。
-title: "Vue 的响应式原理中 `Object.defineProperty` 有什么缺陷？为什么在 Vue3.0 采用了 `Proxy`，抛弃了 `Object.defineProperty`？"
+title: "Vue 的响应式原理中 Object.defineProperty 有什么缺陷？为什么在 Vue3.0 采用了 Proxy？"
 # 可选，和文章一样使用。
 slug: Object.defineProperty与Proxy
 # 必填。发布/更新日期，如 2025-10-01。用于排序（配合 order）。
