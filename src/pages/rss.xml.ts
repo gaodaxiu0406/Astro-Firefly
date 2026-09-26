@@ -22,10 +22,15 @@ export async function GET(context: APIContext): Promise<Response> {
 	return rss({
 		title: siteConfig.title,
 		description: siteConfig.subtitle || "No description",
-		site: context.site ?? "https://firefly.cuteleaf.cn",
+		// site: context.site ?? "https://firefly.cuteleaf.cn",
+		site: context.site ?? "https://gaodaxiu-blog.netlify.app",
+		// customData: `<templateTheme>Firefly</templateTheme>
+		// <templateThemeVersion>${pkg.version}</templateThemeVersion>
+		// <templateThemeUrl>https://github.com/CuteLeaf/Firefly</templateThemeUrl>
+		// <lastBuildDate>${formatDateI18nWithTime(new Date())}</lastBuildDate>`,
 		customData: `<templateTheme>Firefly</templateTheme>
 		<templateThemeVersion>${pkg.version}</templateThemeVersion>
-		<templateThemeUrl>https://github.com/CuteLeaf/Firefly</templateThemeUrl>
+		<templateThemeUrl>https://github.com/gaodaxiu0406</templateThemeUrl>
 		<lastBuildDate>${formatDateI18nWithTime(new Date())}</lastBuildDate>`,
 		items: feedItems,
 	});

@@ -138,7 +138,6 @@ function resolveSiteLogoSource(color: string, size: number): string | null {
 		? withBase(logo.value)
 		: null;
 }
-
 function getLines(
 	ctx: CanvasRenderingContext2D,
 	text: string,
@@ -600,8 +599,11 @@ function closeModal() {
 }
 
 let copied = false;
+// 复制链接
 function copyLink() {
 	navigator.clipboard.writeText(url);
+	console.log(url, 'url')
+	console.log(navigator.clipboard.writeText(url), 'navigator.clipboard.writeText(url)')
 	copied = true;
 	setTimeout(() => {
 		copied = false;
@@ -627,6 +629,7 @@ function portal(node: HTMLElement) {
   aria-label="Generate Share Poster"
 >
   <Icon icon="material-symbols:share" />
+	<!-- 分享弹框中的  分享按钮 -->
   <span>{i18n(I18nKey.shareArticle)}</span>
 </button>
 
@@ -651,7 +654,8 @@ function portal(node: HTMLElement) {
       </div>
       
       <div class="p-4 border-t border-gray-100 dark:border-gray-700 grid grid-cols-2 gap-3">
-        <button 
+        <!-- 分享弹框中的  复制链接 按钮 -->
+				<button 
           class="py-3 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-200 rounded-xl font-medium hover:bg-gray-200 dark:hover:bg-gray-600 active:scale-[0.98] transition-all flex items-center justify-center gap-2"
           on:click={copyLink}
         >
@@ -663,6 +667,7 @@ function portal(node: HTMLElement) {
             <span>{i18n(I18nKey.copyLink)}</span>
           {/if}
         </button>
+				<!-- 分享弹框中的  保存海报 按钮 -->
         <button 
           class="py-3 text-white rounded-xl font-medium active:scale-[0.98] transition-all flex items-center justify-center gap-2 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed hover:brightness-90"
           style="background-color: {themeColor};"

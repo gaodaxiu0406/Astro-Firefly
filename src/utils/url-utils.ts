@@ -84,6 +84,7 @@ export function getCanonicalUrl(urlObj: URL): string {
 }
 
 export function url(path: string): string {
+	console.log(path, 'path66666')
 	// 关键修复：如果是网络URL，直接返回原地址
 	if (
 		path.startsWith("http://") ||
@@ -92,7 +93,7 @@ export function url(path: string): string {
 	) {
 		return path;
 	}
-
+	console.log(import.meta.env.BASE_URL, 'import.meta.env.BASE_URL55555')
 	// 只有本地相对路径才添加BASE_URL
 	return joinUrl("", import.meta.env.BASE_URL, path);
 }

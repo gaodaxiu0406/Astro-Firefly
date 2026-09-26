@@ -11,10 +11,13 @@ function withBase(assetPath: string): string {
 	const normalizedPath = assetPath.startsWith("/")
 		? assetPath
 		: `/${assetPath}`;
+	console.log(normalizedPath, 'normalizedPath2222222')
 	const base = import.meta.env.BASE_URL || "/";
 	if (base !== "/" && normalizedPath.startsWith(base)) {
+		console.log(normalizedPath, 'normalizedPath3333333')
 		return normalizedPath;
 	}
+	console.log(normalizedPath, 'normalizedPath444444')
 	return url(normalizedPath);
 }
 

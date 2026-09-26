@@ -48,7 +48,8 @@ export const siteConfig: SiteConfig = {
 	subtitle: "高大秀",
 
 	// 站点 URL
-	site_url: "https://firefly.cuteleaf.cn",
+	// site_url: "https://firefly.cuteleaf.cn",
+	site_url: "https://gaodaxiu-blog.netlify.app",
 
 	// 站点描述
 	description:
