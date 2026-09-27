@@ -12,7 +12,7 @@ order: 1
 # 可选。卡片简介 + 详情页描述。
 description: "使用Astro搭建个人博客全攻略"
 # 可选。封面图。支持完整 URL、公共根路径（/images/xxx.png）、相对路径（相对本文件目录，如 images/xxx.png）。留空则不显示封面。
-# image: "./images/MongoDB安装目录.png"
+image: "./images/blog-1.png"
 # 可选。项目状态，用标准 key:planning计划中 developing开发中 published已发布 archived已归档
 status: "archived"
 # 分类
@@ -164,17 +164,17 @@ pnpm create astro@latest
 - 安装依赖（`deps`）：确认自动安装项目依赖。
 - 初始化 `Git`（`git`）：确认自动创建 `Git` 仓库，完成版本控制初始化。
 
-截图blog-1？？？
+![图片7](./images/blog-1.png)
 
 ### 2.3 启动Astro开发服务器测试
 
 这样基础的博客模板就生成好了，命令行进入到博客目录下，输入`pnpm run dev`命令启动 `Astro` 开发服务器:  
 
-截图blog-2？？？
+![图片7](./images/blog-2.png)
 
 根据运行提示，在浏览器输入 `http://localhost:4321/` 访问博客
 
-截图blog-3？？？
+![图片7](./images/blog-3.png)
 
 测试完成后，回到命令行`Ctrl+C`关闭服务器。
 
@@ -208,11 +208,11 @@ pnpm create astro@latest
 
 首先Fork一下你选择的Astro博客主题仓库（这里我用的是Firefly）到自己的Github仓库：仓库名、描述可以自定义，只拷贝主分支。
 
-截图blog-4？？？
+![图片7](./images/blog-4.png)
 
 然后再克隆到本地：
 
-截图blog-5？？？
+![图片7](./images/blog-5.png)
 截图blog-6？？？git clone 在哪个文件夹下运行？？？
 
 ### 3.3 制定分支策略
@@ -230,7 +230,7 @@ git push -u origin dev
 git branch -vv
 ```
 
-截图blog-7？？？
+![图片7](./images/blog-7.png)
 
 ### 3.4 配置与DIY博客
 
@@ -304,7 +304,7 @@ git commit -m "feat: 修改主页布局"
 git push origin dev // 将本地dev同步到GitHub的dev分支 注意：此时远程master主分支与dev分支并未同步，dev分支才是你修改后的最新代码
 ```
 
-更多git命令请前往[git常用命令统计]？？？
+<!-- 更多git命令请前往[git常用命令统计]？？？ -->
 
 <!-- ### 3.5 同步原主题仓库更新
 
@@ -394,7 +394,7 @@ git push
 
 ### 5.1 检查
 
-首先需要检查你的邮箱是否是你的GitHub邮箱，如果邮箱不一致，需要修改为正确的邮箱
+首先需要检查你的邮箱是否是你的`GitHub`邮箱，如果邮箱不一致，需要修改为正确的邮箱
 
 ```js
 // 查询邮箱
