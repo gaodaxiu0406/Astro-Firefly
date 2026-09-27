@@ -57,7 +57,7 @@ published: 2025-10-01
 draft: false
 order: 100
 description: "一个功能丰富的开源博客主题。"
-image: "images/firefly.avif"
+# image: "images/firefly.avif"
 status: "published"
 tags:
   - Astro
