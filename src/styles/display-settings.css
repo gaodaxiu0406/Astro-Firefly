@@ -1,3 +1,8 @@
+/* 隐藏Netlify打包后形成的右下角按钮 */
+#nl-badge-frame {
+	display: none;
+}
+
 /* 显示设置面板样式 */
 
 #display-setting input[type="range"] {
