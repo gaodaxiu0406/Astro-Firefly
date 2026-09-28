@@ -186,22 +186,22 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 			showOnPostPage: true,
 			// 组件专属配置（广告内容直接在此配置）
 			specificConfig: {
-				ad: {
-					image: {
-						src: "/assets/images/ad/ad1.webp",
-						alt: "广告横幅",
-						link: "https://haoka.lot-ml.com/plugreg.html?agentid=1423316",
-						external: true,
-					},
-					// 是否允许关闭广告
-					closable: false,
-					// 显示次数限制，-1为无限制
-					displayCount: -1,
-					// 组件内边距配置
-					padding: {
-						all: "1rem",
-					},
-				},
+				// ad: {
+				// 	image: {
+				// 		src: "/assets/images/ad/ad1.webp",
+				// 		alt: "广告横幅",
+				// 		link: "https://haoka.lot-ml.com/plugreg.html?agentid=1423316",
+				// 		external: true,
+				// 	},
+				// 	// 是否允许关闭广告
+				// 	closable: false,
+				// 	// 显示次数限制，-1为无限制
+				// 	displayCount: -1,
+				// 	// 组件内边距配置
+				// 	padding: {
+				// 		all: "1rem",
+				// 	},
+				// },
 			},
 		},
 		{
