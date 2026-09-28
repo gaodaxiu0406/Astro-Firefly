@@ -27,10 +27,6 @@ tags:
 # 可选。标签，列表页与详情页显示为 #标签。
 ---
 
-## Mac 显示隐藏文件的快捷键
-
-Mac 显示隐藏文件的快捷键是 ‌Command + Shift + .（点号）‌。在访达窗口中按下此组合，隐藏文件会显示，再按一次恢复隐藏。
-
 # 报错及解决
 
 ## 1. `报错request to https://registry.npm.taobao.org/pnpm failed, reason: certificate has expired`
