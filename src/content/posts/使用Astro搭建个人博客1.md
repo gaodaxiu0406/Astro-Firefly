@@ -2,15 +2,15 @@
 # 必填。项目名称。
 title: "使用Astro搭建个人博客1"
 # 可选，和文章一样使用。
-slug: Astro博客搭建全攻略
+slug: Astro博客搭建部署
 # 必填。发布/更新日期，如 2025-10-01。用于排序（配合 order）。
 published: 2026-09-25
 # 可选，默认 false。设为 true 时生产构建会隐藏该页，预览可见。
-draft: true
+draft: false
 # 可选。手动排序权重，越大越靠前；未设置则按 published 降序。
 order: 1
 # 可选。卡片简介 + 详情页描述。
-description: "使用Astro搭建个人博客全攻略"
+description: "使用Astro搭建个人博客及部署，使用Firefly主题，使用Vercel部署"
 # 可选。封面图。支持完整 URL、公共根路径（/images/xxx.png）、相对路径（相对本文件目录，如 images/xxx.png）。留空则不显示封面。
 image: "./images/blog-1.png"
 # 可选。项目状态，用标准 key:planning计划中 developing开发中 published已发布 archived已归档
@@ -27,11 +27,11 @@ tags:
 # 可选。标签，列表页与详情页显示为 #标签。
 ---
 
-# Astro博客搭建全攻略
+# Astro博客搭建部署
 
 因为我是mac本，所以该文主要以mac系统进行说明
 
-之前的博客一直基于 `Hexo` 搭建 [https://gaodaxiu0406.github.io](https://gaodaxiu0406.github.io), 部署在免费的 `github` 上。HEXO博客的源码因为各种原因丢失了，于是准备重新搭建自己的技术博客。
+之前的博客一直基于 `Hexo` 搭建 [https://gaodaxiu0406.github.io](https://gaodaxiu0406.github.io)**已停止更新**, 部署在免费的 `github` 上。HEXO博客的源码因为各种原因丢失了，于是准备重新搭建自己的技术博客。
 
 搭建前了解了不少免费个人技术博客搭建，主要被 `Astro` 的「群岛架构」理念吸引，于是开启了新技术博客的搭建之旅。
 
@@ -111,7 +111,7 @@ export NVM_NODEJS_ORG_MIRROR=https://npmmirror.com/mirrors/node/
 source ~/.zshrc
 
 // 5.验证安装‌(运行后输出版本号即为安装成功)
-nvm --version
+nvm --version // 简写 nvm -v
 
 // 其他常规操作：
 // 安装最新 LTS 版本
@@ -164,17 +164,17 @@ pnpm create astro@latest
 - 安装依赖（`deps`）：确认自动安装项目依赖。
 - 初始化 `Git`（`git`）：确认自动创建 `Git` 仓库，完成版本控制初始化。
 
-![图片7](./images/blog-1.png)
+![图片1](./images/blog-1.png)
 
 ### 2.3 启动Astro开发服务器测试
 
 这样基础的博客模板就生成好了，命令行进入到博客目录下，输入`pnpm run dev`命令启动 `Astro` 开发服务器:  
 
-![图片7](./images/blog-2.png)
+![图片2](./images/blog-2.png)
 
 根据运行提示，在浏览器输入 `http://localhost:4321/` 访问博客
 
-![图片7](./images/blog-3.png)
+![图片3](./images/blog-3.png)
 
 测试完成后，回到命令行`Ctrl+C`关闭服务器。
 
@@ -196,6 +196,8 @@ pnpm create astro@latest
 
 ## 3 配置Astro博客主题
 
+这里直接使用的可Fork的主题库，可以新建个空文件夹。
+
 ### 3.1 Astro博客主题模板推荐
 
 - `AstroPaper`：非常简约、干净，页面结构简单，适合喜欢极简风格的博主。`Lighthouse Score`全满分，不足之处就是暂时没有侧边目录，长文章阅读起来体验不好。[官方仓库链接](https://github.com/satnaing/astro-paper)
@@ -204,16 +206,21 @@ pnpm create astro@latest
 - `Astro Theme Pure`：设计独特，一打开就有让人眼前一亮的感觉，在网站内容组织方面也比较新颖，`Lighthouse Score`全满分。[官方仓库链接](https://github.com/cworld1/astro-theme-pure)
 - `Fuwari`：优雅美观，中规中矩，页面结构和大多数博客主题设计相似，文档比较简陋。[官方仓库链接](https://github.com/saicaca/fuwari)
 
-### 3.2 Fork主题仓库
+### 3.2 Fork主题仓库Firefly
 
 首先Fork一下你选择的Astro博客主题仓库（这里我用的是Firefly）到自己的Github仓库：仓库名、描述可以自定义，只拷贝主分支。
 
-![图片7](./images/blog-4.png)
+![图片4](./images/blog-4.png)
 
 然后再克隆到本地：
 
-![图片7](./images/blog-5.png)
-截图blog-6？？？git clone 在哪个文件夹下运行？？？
+![图片5](./images/blog-5.png)
+
+```js
+git clone 上图中你复制的地址
+```
+
+![图片6](./images/blog-6.png)
 
 ### 3.3 制定分支策略
 
@@ -255,15 +262,13 @@ pnpm dev
 
 3.根据预览结果，逐项调整、测试配置，直到效果符合预期。
 
-这个过程的技术门槛并不高，需要投入一定耐心 —— 逐一测试每个配置项对应的视觉 / 功能效果，明确不同参数修改后会影响博客的哪个具体部分（比如站点标题、导航栏样式、文章排版、侧边栏组件、评论模块等）。
-
-不过有了前文提到的 Astro 开发服务器自带的热更新（HMR）能力，在这个测试调整阶段能极大提升效率。你对配置文件的每一处修改都会即时同步到浏览器的预览页面中，无需手动刷新页面，也不用重启开发服务器，让你能快速验证每一项配置的效果，大幅缩短调试周期。
+这个过程的技术门槛并不高，需要投入一定耐心。
 
 ### 4.1 写文章
 
-不同博客主题，文章存放位置略有不同，具体要查看主题文档，比如Firefly主题的文章文件放在 src/content/posts/ 目录中。
+不同博客主题，文章存放位置略有不同，具体要查看主题文档，比如`Firefly`主题的文章文件放在 `src/content/posts/` 目录中。
 
-另外文章Frontmatter字段的设定也不一样，我们只需要依据主题官方文档来配置即可。
+另外文章`Frontmatter`字段的设定也不一样，我们只需要依据主题官方文档来配置即可。
 
 更多内容查阅官方文档： [Astro 中的 Markdown | Docs](https://docs.astro.build/zh-cn/guides/markdown-content/#_top)
 
@@ -277,13 +282,13 @@ pnpm dev
 
 2. 构建完成后，你可以在终端执行预览命令`pnpm preview`
 
-> 执行后就能在本地浏览器中预览已构建好的网站。需要注意的是，预览展示的是你最后一次执行 `pnpm build` 时的网站状态—— 如果在打包后修改了代码，这些改动不会立刻出现在预览中，必须重新运行 `pnpm build` 打包，才能看到最新的修改效果。
+> 执行后就能在本地浏览器中预览已构建好的网站。需要注意的是，预览展示的是你最后一次执行 `pnpm build` 时的网站状态 —— 如果在打包后修改了代码，这些改动不会立刻出现在预览中，必须重新运行 `pnpm build` 打包，才能看到最新的修改效果。
 
 若要退出预览模式，可按下 `Ctrl + C` 终止预览进程，随后在终端执行其他命令（例如重启开发服务器）即可回到开发模式。开发模式下，你的代码修改会实时同步到预览窗口，无需重复构建。
 
 ### 4.2 日常维护博客
 
-平时修改博客内容、调整自定义配置等常规操作，全程在你的开发分支（如 dev） 完成，master 分支保持 “干净”（仅用于跟踪原仓库更新），避免日常操作污染主分支。
+平时修改博客内容、调整自定义配置等常规操作，全程在你的开发分支（如 `dev`） 完成，`master` 分支保持 “干净”（仅用于跟踪原仓库更新），避免日常操作污染主分支。
 
 ```js
 // 1. 确保当前在开发分支（每次操作前先确认，避免切错分支）
@@ -298,149 +303,86 @@ git status
 git add .
 
 // 4. 提交修改（备注最好要清晰，方便后续追溯） 
-git commit -m "feat: 修改主页布局" 
+git commit -m "修改主页布局" 
 
 // 5. 推送到你的Fork仓库（把本地修改同步到GitHub） 
 git push origin dev // 将本地dev同步到GitHub的dev分支 注意：此时远程master主分支与dev分支并未同步，dev分支才是你修改后的最新代码
 ```
 
-<!-- 更多git命令请前往[git常用命令统计]？？？ -->
-
-<!-- ### 3.5 同步原主题仓库更新
-
-这是原主题作者发布更新（如修复 Bug、新增功能）后，你需要把这些更新同步到自己仓库的操作，核心是 “先更新干净的 master 分支，再合并到开发分支”。
-
-GitHub 网页端同步你的 Fork 仓库（更新 master 分支）：
-
-- 当原仓库有更新后，你的Fork 仓库会有如下图所示提示
-- 点击 `Sync fork` > `Update branch` 同步更新
-
-截图blog-？？？
-
-先让 master 分支同步原仓库最新代码，再将更新合并到你的 dev 分支，冲突只在「开发分支」解决，不影响主分支。
-
-步骤 1：更新本地 master 分支
-
-```js
-// 1. 切到master分支
-git checkout master 
-
-// 2. 拉取Fork仓库更新
-git pull
-```
-
-步骤 2：合并到你的开发分支
-
-```js
-// 1. 切回开发分支 
-git checkout dev 
-
-// 2. 合并更新后的 master 分支到开发分支 
-git merge master 
-
-// 3. 若有冲突，本地解决后提交
-git add . # 标记冲突文件已解决
-git commit -m "merge: 同步主题更新，解决xxx文件冲突"
-git push
-```
-
-图片？？？
-
-### 3.6 私有化仓库
-
-对于不想公开自己的博客仓库、希望将其设置为私有化的博主来说，由于 GitHub 上 fork 的仓库不支持直接设为私有，我们可按以下步骤操作：首先点击「Leave fork network」，脱离原 fork 网络；随后刷新页面，再点击「Change visibility」，将仓库可见性修改为私有。
-
-图片？？？
-
-图片？？？
-
-脱离 fork 网络并将仓库设为私有后，无法再通过 GitHub 网页端直接同步原仓库的更新。
-
-替代方案：你可以在本地仓库中，手动添加原仓库作为 “上游仓库”，通过 Git 命令行拉取原仓库的更新，修改完成后再推送到自己的私有仓库，就能实现间接同步（全程需在本地操作，无法通过网页端完成）
-
-初始设置（只需做一次）：
-
-```js
-// 切换到master分支
-git checkout master
-
-// 添加上游仓库
-git remote add upstream https://github.com/原始作者/原始仓库名.git
-
-// 检查
-git remote -v
-```
-
-图片？？？
-
-同步更新（以后每次都这样操作）：
-
-```js
-// 切换到master分支
-git checkout master
-
-// 从上游仓库主分支拉取最新代码
-git pull upstream master
-
-// 推送到你的私有仓库
-git push
-```
-
-最后再按照前文的教程，将更新合并到你的开发分支即可。 -->
-
 ## 5 Vercel 部署
 
 `Astro`部署方案有很多，具体参考官方文档：部署你的 `Astro` 站点 [Docs](https://docs.astro.build/zh-cn/guides/deploy/)
 
-### 5.1 检查
+| 平台 | 免费额度 | 国内访问 | 适合场景 |
+| --- | --- | --- | --- |
+| ‌Cloudflare Pages‌ | 无限带宽/请求 | 部分地区良好 | 首选，性价比最高 |
+| ‌GitHub Pages‌ | 1GB存储/100GB带宽/月 | 一般 | 开源项目展示 |
+| ‌Vercel‌ | 100GB带宽/月 | 不稳定 | 个人博客/文档 |
+| ‌Netlify‌ | 100GB带宽/月 | 一般 | 企业级应用 |
 
-首先需要检查你的邮箱是否是你的`GitHub`邮箱，如果邮箱不一致，需要修改为正确的邮箱
+由于之前使用HEXO搭建博客的时候用的‌ `GitHub`，所以这里我就没再尝试使用`‌GitHub Pages`‌部署了。
+我尝试使用`Cloudflare Pages`和`‌Netlify‌`部署，都没有成功。最终使用`‌Netlify`‌部署成功。
 
-```js
-// 查询邮箱
-git config --global user.email
+### 5.1 本地部署 `Netlify`
 
-// 修改为正确的邮箱
-git config --global user.email "xxx@xxx.com"
-```
-
-Astro 可以完全免费部署和访问，推荐用 ‌[Cloudflare Pages‌](https://www.astrojs.cn/zh-tw/guides/deploy/cloudflare/)，免费额度最实在，国内访问也相对友好。
-
-<!-- 这里我使用`Vercel`，主要是`Vercel`原生支持`Astro`项目，不需要复杂的配置，只需要导入你的`Astro`项目仓库即可。
-
-另外部署在`Vercel`的站点实测国内访问速度会比部署在`Cloudflare Pages`快一些，这也是我选择它的一个重要原因。
-
-### 5.1 创建与部署项目
-
-这里 `Vercel` 导入项目就直接强制执行一次部署，而且部署分支是默认的，在这时还不能改，这个设定有点难绷……
-
-而我们前文指定了`master`分支是用来跟踪主题更新的，`dev`才是我们博客源码所在的分支，所以首先我们要把`Vercel`项目的部署分支设置为`dev`。
-
-1. 打开项目设置>Environments>Production，将分支修改过来后点击保存。
-
-图片？？？
-
-这样我们的`Vercel`项目跟踪的就是`dev`分支，每次推送到该分支的提交， `Vercel` 都会自动帮我们创建一个生产部署（也就是自动更新我们线上的博客）。
-
-2. 然后前往`Vercel`官网注册账号，创建一个新项目：
-
-图片？？？
-
-授权你的`Github`账户，导入你的`Astro`博客仓库：
-
-图片？？？
-
-`Vercel`自动识别出了`Astro`项目，帮我们做好了部署配置，无需任何修改，直接点击`Deploy`：
-
-图片？？？
-
-我们后续只需要再往`dev`分支推送一次新的提交，就可以触发 `Vercel` 项目的自动部署。
-
-自动部署未触发时，可检查提交作者的邮箱是否与你的 `Vercel` 账户邮箱一致（若通过 `GitHub` 登录，则需匹配关联的 `GitHub` 账号邮箱）。 -->
+全局安装 `netlify-cli`
 
 ```js
-// 卸载node
-sudo rm -rf /usr/local/bin/node /usr/local/bin/npm /usr/local/bin/npx
-sudo rm -rf /usr/local/lib/node_modules /usr/local/include/node
-sudo rm -rf /usr/local/share/doc/node /usr/local/share/man/man1/node.1 /usr/local/lib/dtrace/node.d
+npm install -g netlify-cli
 ```
+
+验证是否安装成功
+
+```js
+netlify --version
+```
+
+输出版本号即为安装成功
+
+### 5.2 `Netlify` 关联项目
+
+登录[ Netlify 官网](https://app.netlify.com)，如果没有账号需要注册一下，可以直接关联GitHub登录。这里我是直接关联的GitHub登录。
+
+在官网点击`Add new project`新建一个项目
+
+![图片8](./images/blog-8.png)
+
+选择引入/关联你的项目，我的项目在github上，所以我这里选择的GitHub
+
+![图片9](./images/blog-9.png)
+
+选择/搜索你的项目库并选择
+
+![图片10](./images/blog-10.png)
+
+填写你的项目名称（最终会成功访问链接中）
+
+**注意：** 如果你的项目最新代码也在dev分支上，这里一定要将Build settings选择为dev分支。（这里默认打包的是master分支）
+
+![图片11](./images/blog-11.png)
+
+到页面最底部，点击 "Deploy 你的项目名称"按钮
+
+跳转的页面最底下，已经开始自动打包部署了，点击进去可以看到详细
+
+![图片12](./images/blog-12.png)
+
+刚发布的项目，项目名称后面有个锁的图标，这代表当前这个项目虽然发布成功了，但它现在是个私有项目，别人可能访问不到你的项目，点击“visitor access settings”去设置
+
+![图片13](./images/blog-13.png)
+
+点击Edit visibility 去编辑
+
+![图片14](./images/blog-14.png)
+
+选择Public，点击 Save 保存设置
+
+![图片15](./images/blog-15.png)
+
+当这里的图标是这样的，说明项目部署成功了。点击进入当前项目，可以看到项目的详细设置
+
+![图片16](./images/blog-16.png)
+
+点击 Share ，弹框中复制链接，就可以访问你的博客地址了。
+
+![图片17](./images/blog-17.png)
