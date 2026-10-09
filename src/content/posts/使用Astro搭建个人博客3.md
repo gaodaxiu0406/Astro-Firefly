@@ -1,16 +1,16 @@
 ---
 # 必填。项目名称。
-title: "使用Astro搭建个人博客2"
+title: "使用Astro搭建个人博客3"
 # 可选，和文章一样使用。
-slug: 使用Astro搭建个人博客遇到的问题
+slug: 使用Astro搭建个人博客遇到的问题3
 # 必填。发布/更新日期，如 2025-10-01。用于排序（配合 order）。
-published: 2026-09-25
+published: 2026-09-27
 # 可选，默认 false。设为 true 时生产构建会隐藏该页，预览可见。
 draft: true
 # 可选。手动排序权重，越大越靠前；未设置则按 published 降序。
 order: 1
 # 可选。卡片简介 + 详情页描述。
-description: "使用Astro搭建个人博客遇到的问题"
+description: "使用Astro搭建个人博客遇到的问题3"
 # 可选。封面图。支持完整 URL、公共根路径（/images/xxx.png）、相对路径（相对本文件目录，如 images/xxx.png）。留空则不显示封面。
 # image: "./images/MongoDB安装目录.png"
 # 可选。项目状态，用标准 key:planning计划中 developing开发中 published已发布 archived已归档

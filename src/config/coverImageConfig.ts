@@ -32,9 +32,9 @@ export const coverImageConfig: CoverImageConfig = {
 		enable: false,
 		// 封面图API列表
 		apis: [
-			"https://t.alcy.cc/pc",
-			"https://www.dmoe.cc/random.php",
-			"https://uapis.cn/api/v1/random/image?category=acg&type=pc",
+			// "https://t.alcy.cc/pc",
+			// "https://www.dmoe.cc/random.php",
+			// "https://uapis.cn/api/v1/random/image?category=acg&type=pc",
 		],
 	},
 };

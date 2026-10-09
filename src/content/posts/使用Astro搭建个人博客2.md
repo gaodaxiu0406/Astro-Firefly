@@ -4,7 +4,7 @@ title: "使用Astro搭建个人博客2"
 # 可选，和文章一样使用。
 slug: 使用Astro搭建个人博客遇到的问题
 # 必填。发布/更新日期，如 2025-10-01。用于排序（配合 order）。
-published: 2026-09-25
+published: 2026-09-26
 # 可选，默认 false。设为 true 时生产构建会隐藏该页，预览可见。
 draft: false
 # 可选。手动排序权重，越大越靠前；未设置则按 published 降序。

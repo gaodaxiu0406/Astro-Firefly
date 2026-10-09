@@ -112,23 +112,30 @@ export const booknavConfig: BooknavGroup[] = [
 		weight: 80,
 		items: [
 			{
+				title: "weavatar",
+				url: "https://weavatar.com",
+				desc: "上传图片，生成在线头像地址",
+				weight: 4,
+			},
+			{
 				title: "TinyPNG",
 				url: "https://tinypng.com",
 				desc: "在线压缩 PNG / JPEG 图片",
-				weight: 10,
+				weight: 3,
 			},
 			{
 				title: "Squoosh",
 				url: "https://squoosh.app",
 				desc: "Google 出品的图片压缩与格式转换",
-				weight: 9,
+				weight: 2,
 			},
 			{
 				title: "Carbon",
 				url: "https://carbon.now.sh",
 				desc: "把代码片段生成漂亮的图片",
-				weight: 8,
+				weight: 1,
 			},
+			
 		],
 	},
 	{
