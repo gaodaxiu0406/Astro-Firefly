@@ -31,7 +31,7 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 			// 标签
 			LinkPresets.Tags,
 
-			// 系列
+			// Ai系列
 			LinkPresets.Series,
 		],
 	});
@@ -166,7 +166,7 @@ export const LinkPresets: Record<string, NavBarLink> = {
 		icon: "material-symbols:tag-rounded",
 	},
 	Series: {
-		name: "系列",
+		name: "Ai系列",
 		url: "/series/",
 		icon: "material-symbols:layers",
 	},

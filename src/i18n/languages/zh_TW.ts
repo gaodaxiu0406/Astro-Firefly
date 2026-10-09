@@ -16,7 +16,7 @@ export const zh_TW: Translation = {
 
 	// 導覽列選單分組
 	[Key.navArticles]: "文章",
-	// [Key.navSocial]: "社交",
+	[Key.navSocial]: "社交",
 	[Key.navMine]: "我的",
 	[Key.navAbout]: "關於",
 	[Key.navLinks]: "連結",
@@ -365,11 +365,11 @@ export const zh_TW: Translation = {
 	[Key.noRandomPosts]: "暫無隨機文章",
 
 	// 文章系列
-	[Key.series]: "系列",
-	[Key.seriesPartOf]: "所屬系列",
+	[Key.series]: "Ai系列",
+	[Key.seriesPartOf]: "所屬Ai系列",
 	[Key.seriesPart]: "第 {n} 篇",
 	[Key.seriesThisArticle]: "本文",
-	[Key.noSeries]: "暫無系列",
+	[Key.noSeries]: "暫無Ai系列",
 
 	// 加密
 	[Key.postEncrypted]: "本文已加密",
